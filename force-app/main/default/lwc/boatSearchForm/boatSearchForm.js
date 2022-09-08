@@ -12,7 +12,7 @@ export default class BoatSearchForm extends LightningElement {
   @wire(getBoatTypes)
   
   // Wire a custom Apex method
-    boatTypes({ error, data }) {
+  boatTypes({ error, data }) {
     if (data) {
       this.searchOptions = data.map(type => {
         // TODO: complete the logic
